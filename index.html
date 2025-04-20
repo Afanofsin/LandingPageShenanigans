@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Add fallback in case CSS fails to load -->
+    <style>
+      body { font-family: Arial, sans-serif; color: #fff; background-color: #1b1b1b; }
+    </style>
+  </head>
+  <body>
+    <!-- Add skip navigation link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+      <div class="header-card" style="background-image: url('https://picsum.photos/seed/site-a/1920/1080')">
+         <div class="header-content">
+            <h1>Landing Page</h1>
+         </div>
+        </div>
+    </header>
+
+    <main id="main-content" class="cards-container">
+      <a href="/site-a" class="card">
+        <div
+          class="card-image"
+          style="background-image: url('https://picsum.photos/seed/site-a/1920/1080')"
+          role="img"
+          aria-label="Thumbnail for Site A"
+        ></div>
+        <div class="card-content">
+          <h3>Visit Site A</h3>
+        </div>
+      </a>
+      <a href="/site-b" class="card">
+        <div
+          class="card-image"
+          style="background-image: url('https://picsum.photos/seed/site-b/1920/1080')"
+          role="img"
+          aria-label="Thumbnail for Site B"
+        ></div>
+        <div class="card-content">
+          <h3>Visit Site B</h3>
+        </div>
+      </a>
+      <a href="/site-c" class="card">
+        <div
+          class="card-image"
+          style="background-image: url('https://picsum.photos/seed/site-c/1920/1080')"
+          role="img"
+          aria-label="Thumbnail for Site C"
+        ></div>
+        <div class="card-content">
+          <h3>Visit Site C</h3>
+        </div>
+      </a>
+      <a href="/site-d" class="card">
+        <div
+          class="card-image"
+          style="background-image: url('https://picsum.photos/seed/site-d/1920/1080')"
+          role="img"
+          aria-label="Thumbnail for Site D"
+        ></div>
+        <div class="card-content">
+          <h3>Visit Site D</h3>
+        </div>
+      </a>
+    </main>
+
+    <div class="chat-bubble" id="chat" aria-label="Live Chat">
+      <div class="chat-header">
+        <span>Live Chat</span>
+        <button
+          class="close-chat"
+          id="close-chat-btn"
+          aria-label="Close chat"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="chat-body">
+        <p>
+          Hello! This is a demo chat box. We're not online right now but feel
+          free to check back later!
+        </p>
+      </div>
+    </div>
+
+    <footer>&copy; 2025 YourSiteName. All rights reserved.</footer>
+
+    <!-- Move JavaScript to end of body for better performance -->
+    <script>
+      document.getElementById('close-chat-btn').addEventListener('click', function() {
+        document.getElementById('chat').style.display = 'none';
+      });
+    </script>
+  </body>
+</html>
